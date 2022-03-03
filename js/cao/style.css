@@ -1,7 +1,7 @@
 .movingBtnTopLeft {
   position: absolute;
   top: 10%;
-  left: 10%;
+  left: 15%;
 }
 
 .movingBtnBottomRight {
@@ -12,5 +12,15 @@
 
 .rotated {
   transform: rotate(3240deg);
-  transition: all 5s ease-in-out;
+  transition: all 4s ease-in-out;
+}
+
+input {
+  margin-bottom: 20px;
+}
+
+.name {
+  color: red;
+  font-size: 100px;
+  text-align: center;
 }
