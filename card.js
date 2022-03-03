@@ -73,4 +73,4 @@ goneBtnEl.addEventListener("click", () => {
   }
 });
 
-//pasiziurek onclick function , db dingsta bet neatsiranda//
+//pasiziurek onclick function , db dingsta bet neatsiranda. Galbut reikia perrasyti i css class ir naudot toggle??//

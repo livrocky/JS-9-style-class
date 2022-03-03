@@ -19,3 +19,17 @@ movingBtnEl.addEventListener("click", () => {
 });
 
 //4. Sukurkite input elementą (formos ar mygtuko nereikia), kur vartotojas galės įrašyti savo vardą. Kai rašo - keičiasi puslapio stilius. Jei įrašytos yra du simboliai arba mažiau - viso puslapio fonas raudonas. Jei daugiau nei du simboliai - puslapio fonas žalias.
+
+// const inputTextEl = document.getElementById("text");
+// const bodyEl = document.querySelector("body");
+
+// inputTextEl.addEventListener("input", () => {
+//   const inputText = inputTextEl.value.length;
+//   if (inputText <= 2) {
+//     bodyEl.style.backgroundColor = "tomato";
+//   } else if (inputText > 2) {
+//     bodyEl.style.backgroundColor = "green";
+//   }
+// });
+
+//5. Sukurkite mygtuką HTML'e. O su JS pasirašykite array su keturiom spalvom (["red", "green", "blue", "yellow"]). Paspaudus ant mygtuko - tegul jo spalva pasikeičia į atsitiktinę spalvą.
