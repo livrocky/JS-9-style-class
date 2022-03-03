@@ -72,3 +72,5 @@ goneBtnEl.addEventListener("click", () => {
     cardEl1.style.display = "block";
   }
 });
+
+//pasiziurek onclick function , db dingsta bet neatsiranda//
