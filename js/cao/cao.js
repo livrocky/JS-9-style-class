@@ -12,16 +12,16 @@
 //
 //3. Pakoreguokite antrą pratimą, kad mygtukas suktųsi ratu - laikrodžio rodykle. (NEGRIZTA ATGAL TIK)
 
-const movingBtnEl = document.querySelector("button");
-movingBtnEl.addEventListener("click", () => {
-  movingBtnEl.classList.toggle("movingBtnBottomRight");
-  movingBtnEl.classList.toggle("rotated");
-});
+// const movingBtnEl = document.querySelector("button");
+// movingBtnEl.addEventListener("click", () => {
+//   movingBtnEl.classList.toggle("movingBtnBottomRight");
+//   movingBtnEl.classList.toggle("rotated");
+// });
 
 //4. Sukurkite input elementą (formos ar mygtuko nereikia), kur vartotojas galės įrašyti savo vardą. Kai rašo - keičiasi puslapio stilius. Jei įrašytos yra du simboliai arba mažiau - viso puslapio fonas raudonas. Jei daugiau nei du simboliai - puslapio fonas žalias.
 
-// const inputTextEl = document.getElementById("text");
-// const bodyEl = document.querySelector("body");
+const inputTextEl = document.getElementById("text");
+const bodyEl = document.querySelector("body");
 
 // inputTextEl.addEventListener("input", () => {
 //   const inputText = inputTextEl.value.length;
@@ -33,3 +33,18 @@ movingBtnEl.addEventListener("click", () => {
 // });
 
 //5. Sukurkite mygtuką HTML'e. O su JS pasirašykite array su keturiom spalvom (["red", "green", "blue", "yellow"]). Paspaudus ant mygtuko - tegul jo spalva pasikeičia į atsitiktinę spalvą.
+
+const colorArr = ["red", "green", "blue", "yellow"];
+const randomColorBtn = document.getElementById("randomColorBtn");
+
+function getRandomNumber(min, max) {
+  let step1 = max - min + 1;
+  let step2 = Math.random() * step1;
+  let result = Math.floor(step2) + min;
+  return result;
+}
+
+randomColorBtn.addEventListener("click", () => {
+  let randomNumber = getRandomNumber(0, colorArr.length - 1);
+  bodyEl.style.backgroundColor = colorArr[randomNumber];
+});
