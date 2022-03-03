@@ -58,3 +58,17 @@ checkBoxEls.addEventListener("change", () => {
     cardEl1.style.color = "black";
   }
 });
+
+// prisideti mygtuka kuris paslepia arba rodo visas korteles //
+
+const goneBtnEl = document.getElementById("disappear");
+goneBtnEl.addEventListener("click", () => {
+  const goneBtn = goneBtnEl.clicked;
+  if (goneBtn != 0) {
+    cardEl.style.display = "none";
+    cardEl1.style.display = "none";
+  } else if (!goneBtn) {
+    cardEl.style.display = "block";
+    cardEl1.style.display = "block";
+  }
+});
