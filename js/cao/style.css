@@ -1,0 +1,16 @@
+.movingBtnTopLeft {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.movingBtnBottomRight {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+}
+
+.rotated {
+  transform: rotate(3240deg);
+  transition: all 5s ease-in-out;
+}
