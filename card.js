@@ -63,14 +63,14 @@ checkBoxEls.addEventListener("change", () => {
 
 const goneBtnEl = document.getElementById("disappear");
 goneBtnEl.addEventListener("click", () => {
-  const goneBtn = goneBtnEl.clicked;
-  if (goneBtn != 0) {
-    cardEl.style.display = "none";
-    cardEl1.style.display = "none";
-  } else if (!goneBtn) {
-    cardEl.style.display = "block";
-    cardEl1.style.display = "block";
-  }
+  cardEl.classList.toggle("cardd");
+  cardEl1.classList.toggle("cardd1");
+  // const goneBtn = goneBtnEl.clicked;
+  // if (goneBtn != 0) {
+  //   cardEl.style.display = "none";
+  //   cardEl1.style.display = "none";
+  // } else if (!goneBtn) {
+  //   cardEl.style.display = "block";
+  //   cardEl1.style.display = "block";
+  // }
 });
-
-//pasiziurek onclick function , db dingsta bet neatsiranda. Galbut reikia perrasyti i css class ir naudot toggle??//
