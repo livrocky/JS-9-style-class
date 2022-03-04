@@ -16,6 +16,7 @@ titleEl.addEventListener("click", () => {
 const movingBtnEl = document.querySelector("button");
 movingBtnEl.addEventListener("click", () => {
   movingBtnEl.classList.toggle("movingBtnBottomRight");
+  movingBtnEl.classList.remove("rotated");
   movingBtnEl.classList.add("rotated");
 });
 
